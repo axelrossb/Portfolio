@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1922b76bec.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <h1>AXEL</h1>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>BSIT 2ND YEAR</p>
+            <h2>Hi, I'm <span>Axel Ross</span><br>Bolima From Philippines<br>Los Baños Laguna</h2>
+        </div>
+    </div>
+</div>
+<!-- ---------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h3 class="sub-title">About Me</h3>
+                <p>Hi! Im Axel Ross N. Bolima, 18 years old. Currently taking Bachelor of Science Information Technology 1st year at Laguna State Polytecnic University. I am born and raised in Los Baños Laguna.I am shy and quiet person and only have some friends but I know how to get along with others. I love watching movies and anime. I like playing online games. And I love animals specially dogs and also I love nature. In the future I want to work in some of the highest paying IT jobs if not still ok. I believe that what is impossible to man is possible with God. For my Profesional role I write programs, maintain networks, analyze systems, and provide technical support. </p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('more about me')">More About Me</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills and Expertise</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="more about me">
+                    <ul>
+                        <li><span>Name</span><br>Axel Ross N. Bolima</li>
+                        <li><span>Age</span><br>20</li>
+                        <li><span>Birth Date</span><br>August 19,2004</li>
+                        <li><span>Sex</span><br>Male</li>
+                        <li><span>Nationality</span><br>Filipino</li>
+                        <li><span>Address</span><br>Brgy San Antonio Los Baños Laguna</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li>Programming Languages</li>
+                        <li>Data Analyst</li>
+                        <li>Database Administrator</li>
+                        <li>Cloud Computing Engineer</li>
+                        <li>Information Technology Analyst</li>
+                        <li>Hardware Technician</li>
+                        <li>Help Desk Analyst</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - Current</span><br>Laguna State Polytecnic University (BSIT Course)</li>
+                        <li><span>2020 - 2022</span><br>TRACE COLLEGE (ABM Strand)</li>
+                        <li><span>2020 - 2016</span><br>Los Banos National High School</li>
+                        <li><span>2016 - 2010</span><br>Lopez Elementary School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
+<!-- ----------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h3 class="sub-title">My Services</h3>
+        <div class="services-list">
+            <div>
+                <h4>Photo Editing</h4>
+            </div>
+            <div>
+                <h4>Basic Programming</h4>
+            </div>
+            <div>
+                <h4>Soon</h4>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------portfolio-------------- -->
+<div id="portfolio">
+    <div class = "container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class ="work-list">
+            <div class = "work">
+                <img src = "images/mywork1.jpg">
+                <div class = "layer">
+                    <h3>Photo Editing</h3>
+                    <p>Manipulating and enhancing a photo. Cropping, resizing, and applying artistic filters. It also includes advanced manipulations like retouching and removing unwanted elements and distractions.</p>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "images/mywork3.png">
+                <div class = "layer">
+                    <h3>Video Editing</h3>
+                    <p>Manipulating and combining video files to create a completed video project. Film clips, alter and correct sound mixing, add digital effects, and make other essential technical changes to video files.</p>
+                </div>
+            </div>
+            <div class = "work">
+                <img src = "images/mywork2.jpg">
+                <div class = "layer">
+                    <h3>Basic Programming</h3>
+                    <p>Create computer software, apps and websites.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------contact------------------ -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> axelrossb@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 09511394305</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/axelross.bolima.1"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/axelrossbolima/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="contact-right"></div>
+        </div>
+    </div>
+</div>
+
+<div class="copyright">
+    <p>Copyright © Axel.</p>
+</div>
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu")
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+</body>
+</html>
